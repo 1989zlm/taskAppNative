@@ -1,9 +1,14 @@
+//! ASYCNSTORAGE DA HERHANGİ BİR VERİ YOKSA BİZİ DİREK EKLEME SAYFASINA YÖNLENDİRECEK + İKONU ŞEKLİNDE BUNUN YÖNLERDİMESİNİ YAPTIK
+
+
+
+
 import { View, Text, StyleSheet, Dimensions, Image, TouchableOpacity } from 'react-native'
 import React from 'react'
-import colors from '../themes/Colors'
 import { useNavigation } from '@react-navigation/native';
 import AsyncStorage from '@react-native-async-storage/async-storage';
 import AsyncStorageKey from '../constants/AsyncStorageKey';
+import colors from '../themes/Colors';
 
 const width = Dimensions.get('screen').width;
 console.log(width)

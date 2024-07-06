@@ -1,0 +1,29 @@
+// eğer  listede yani flatlistte hiç task yoksa boş görününce kötü duruyor bi fonksiyon basalım
+
+import { StyleSheet, Text, View } from 'react-native';
+import Icon from 'react-native-vector-icons/MaterialCommunityIcons';
+
+
+
+const renderEmptyList = () => {
+    return (
+        <View style={styles.emptyListContainer}>
+            <Icon name="text-box-remove" size={60} color="gray" />;
+            <Text style={styles.emptyText}>Empty Task</Text>
+        </View>
+    )
+}
+const styles = StyleSheet.create({
+    emptyListContainer: {
+        flex: 1,
+        justifyContent: 'center',
+        alignItems: 'center',
+        marginTop: 10,
+    },
+    emptyText: {
+        fontSize: 15,
+        fontWeight: '500',
+        color: 'gray'
+    }
+})
+export default renderEmptyList;

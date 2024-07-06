@@ -14,7 +14,9 @@ AsyncStorage-Task-App
 ### useFocusEffect:
 
 Bu hook, React Navigation kütüphanesinden gelir ve bir ekrana odaklandığında belirli bir fonksiyonun ya da işlevin çalışmasını sağlar.
-useCallback:
+
+### useCallback:
+
 useCallback(() => { loadTasks(); }, []),
 
 Bu hook, fonksiyonun referansını hatırlatmaya yardımcı olur.loadTasks fonksiyonu bir kez oluşturulacak ve aynı referans her seferinde kullanılacaktır.
