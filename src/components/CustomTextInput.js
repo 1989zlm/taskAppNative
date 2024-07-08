@@ -1,6 +1,8 @@
 import { View, Text, TouchableOpacity, Image, TextInput, StyleSheet } from 'react-native'
 import React from 'react'
 import colors from '../themes/Colors'
+import { formatDate } from '../utils/formatDate'
+
 
 
 //! onchange text i TaskList Screen sayfasından buara prop olarak aldık inputtaki verileri almak için
@@ -32,7 +34,9 @@ export default function CustomTextInput({
                         onChangeText={onChangeText}
                         style={styles.textInput}
                     />) : (
-                    <Text style={styles.date} >{value && formatDate(value?.toString())}</Text>
+                    <Text style={styles.date}>
+                        {value && formatDate(value?.toString())}
+                    </Text>
                 )}
             </View>
         </TouchableOpacity>

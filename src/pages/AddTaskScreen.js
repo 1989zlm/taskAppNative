@@ -185,8 +185,8 @@ export default function AddTaskScreen() {
                         style={{ width: '40%' }}
                         label={'Bitiş Tarihi'}
                         isDate
-                        value={endDate}
                         onChangeText={setEndDate}
+                        value={endDate}
                     />
                 </View>
                 <View style={styles.dropdownContainer}>

@@ -73,6 +73,7 @@ export default function TaskListScreen() {
     )
 
     useEffect(() => {
+        console.log(searchText);
         filterTasks();
     }, [searchText, tasks])
 
@@ -95,8 +96,11 @@ export default function TaskListScreen() {
 
     const filterTasks = () => {
         if (searchText) {
+
             //taskların titleı seacrhtext ile eşleşirse dizi olarak ver
-            const filtered = tasks.filter(task => task.title.toLowerCase().includes(searchText.toLowerCase()),
+            const filtered = tasks.filter(task =>
+
+                task.title.toLowerCase().includes(searchText.toLowerCase()),
             );
             // filtrelenmiş diziyi state aktar
             setFilteredTasks(filtered);
@@ -142,7 +146,7 @@ export default function TaskListScreen() {
                 <SafeAreaView style={[styles.container, { marginBottom: 20 }]}>
                     <CustomTextInput
                         value={searchText}
-                        onChange={setSearchText}
+                        onChangeText={setSearchText}
                         imageSource={SearchIcon}
                         style={{ marginHorizontal: 0 }}
                         placeholder="Task ara"
