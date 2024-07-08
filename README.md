@@ -1,3 +1,15 @@
+
+
+#thescreen.gif![EkranKayd2024-07-0814 36 28-ezgif com-video-to-gif-converter](https://github.com/1989zlm/taskAppNative/assets/146070651/12f9b68b-0a86-40cf-95d6-8cd19893633a)
+
+
+
+
+
+
+
+
+
 Kütüphaneler
 @react-native-async-storage/async-storage
 @react-navigation/native
